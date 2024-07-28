@@ -126,3 +126,13 @@ h2{
   justify-content: center;
   }
 }
+@media(max-width:650px){
+  .animated{
+    padding: 30px 10px;
+  }
+}
+@media(max-width:570px){
+  .animation{
+    width: 90%;
+  }
+}
