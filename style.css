@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:system-ui , sans-serif;
+}
+span , a , label {
+  display: inline-block;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.img{
+  position: fixed;
+  z-index: -1;
+  min-height: 100%;
+  object-fit: cover;
+}
+.big{
+  display: grid;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45) , rgba(0, 0, 0, 0.45));
+}
+.nonanimated{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100svh;
+  align-items: center;
+  column-gap: 0;
+}
+h1{
+  color: white;
+  font-size: 70px;
+  text-shadow:0 0 10px  dodgerblue,
+              0 0 20px  dodgerblue,
+              0 0 30px  dodgerblue;
+}
+.title{
+  font-size: 30px;
+  margin-top: 20px;
+  color: white;
+}
+b{
+  margin-top: 250px;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: white;
+}
+.fa-solid{
+  font-size: 45px;
+  animation: scrolling 0.8s linear alternate infinite;
+  color: white;
+  text-shadow:0 0 10px  red,
+              0 0 20px  red,
+              0 0 30px  red,
+              0 0 40px  red;
+}
+@keyframes scrolling {
+  0%{
+    transform: translateY(0);
+  }
+  45%{
+    transform: translateY(35px);
+  }
+}
+.animated{
+  padding: 50px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 25px;
+}
+h2{
+  color: white;
+  width: 100%;
+  font-size: 25px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  text-transform: uppercase;
+  padding: 20px 0;
+  text-align: center;
+}
+.animation{
+  width: calc(30% + 100px);
+  height: 250px;
+  background-color: #202645;
+  border: 10px solid white;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.transparent{
+  background-color: transparent;
+  border: none;
+}
+.pr{
+  padding-right: 4px;
+}
+.dodge{
+  color: #14b1ff;
+}
+.skyblue{
+  color: #87cfde;
+}
+.orange{
+  color: orange;
+}
+@media(max-width:1040px){
+  .animated{
+    padding: 50px;
+  }
+}
+@media(max-width:830px){
+  .transparent{
+    display: none;
+  }
+  .animation{
+    width: 60%;
+  }
+  .animated{
+  justify-content: center;
+  }
+}
